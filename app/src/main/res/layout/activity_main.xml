@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/ic_launcher_background"
+    android:background="@drawable/news"
     tools:context=".MainActivity">
     <TextView
         android:id="@+id/title"
@@ -59,7 +59,7 @@
         android:layout_margin="10dp"/>
 
     <Button
-        android:id="@+id/event"
+        android:id="@+id/scan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SCAN "
