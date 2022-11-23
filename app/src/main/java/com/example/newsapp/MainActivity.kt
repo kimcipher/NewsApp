@@ -22,6 +22,19 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, TechActivity::class.java)
             startActivity(intent)
         }
+
+        val weatherBtn = findViewById<Button>(R.id.weather)
+        weatherBtn.setOnClickListener {
+            val x = Intent(applicationContext, WeatherActivity::class.java)
+            startActivity(x)
+        }
+
+        val politicsBtn = findViewById<Button>(R.id.politics)
+        politicsBtn.setOnClickListener {
+            val y = Intent(applicationContext, PoliticsActivity::class.java)
+            startActivity(y)
+        }
+
         var bbcNews = findViewById<Button>(R.id.bbc)
         bbcNews.setOnClickListener {
             var bbcIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.bbc.com"))
